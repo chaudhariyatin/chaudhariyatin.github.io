@@ -1,0 +1,22 @@
+{
+  "fps": 30,
+  "amount": 30,
+
+  "size":{
+    "min": 2,
+    "max": 15
+  },
+
+  "speed":{
+    "min": 2,
+    "max": 15
+  },
+
+  "style":{
+    "backgroundColor": "",
+    "fill":{
+      "color": "#FF6550",
+      "opacity": "0.8"
+    }
+  }
+}

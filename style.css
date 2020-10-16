@@ -1,0 +1,151 @@
+:root {
+    --black-color: #071c21;
+    /* --accent-color: #2d6e7e; */
+    --dark-accent: #153b44;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    user-select: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-body-container {
+    position: relative;
+}
+
+
+.about-container {
+    /* background-color: #071c21; */
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    color: rgb(218, 208, 208);
+    z-index: 1;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.about-container p {
+    font-family: 'Martel', serif;
+    font-size: 30px;
+    color: #FF6550;
+}
+
+#particles{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+    height: 100vh;
+  }
+
+.git-btn {
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    /* padding: 0px 8px 0px 0px; */
+    margin: 0px 0px 10px 0px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 40%;
+    border: none;
+    outline: none;
+    transition: transform .2;
+}
+
+
+.git-btn :hover {
+    transform: scale(1.2);
+    color: #FF6550;
+}
+
+.linkedin-btn {
+    background-color: var(--accent-color);
+    
+    color: white;
+    text-decoration: none;
+    /* padding: 0px 8px 0px 0px; */
+    margin: 0px 0px 10px 0px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 40%;
+    border: none;
+    outline: none;
+    transition: transform .2;
+}
+
+.linkedin-btn :hover {
+    transform: scale(1.2);
+    color: #FF6550;
+}
+
+.btn-default {
+    background-color: black;
+    height: 50px;
+    margin-bottom: 10px;
+    font-family: 'Martel', serif;
+    font-size: 30px;
+    color: #FF6550;
+    border: 2px solid #FF6550;
+    
+}
+
+
+  
+
+.btn-default :hover {
+    /* color: white;
+    background-color: #FF6550; */
+    color: white;
+}
+
+
+.downBtn {
+    font-size: 40px;
+    color: #FF6550;
+}
+
+/* bounce animation https://codeburst.io/tutorial-make-a-bouncing-ball-entirely-with-css-1e7e3c853a50*/
+.bounce {
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+    animation-iteration-count: infinite; 
+}
+
+@keyframes bounce {
+    from { transform: translate3d(0, 0, 0);     }
+    to   { transform: translate3d(0, 30px, 0); }
+  }
+
+  ball {
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-webkit-keyframes bounce {
+    from { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+    to   { -webkit-transform: translate3d(0, 200px, 0); transform: translate3d(0, 200px, 0); }
+  }
+
+
+.downBtn :hover {
+    color: #FF6550;
+}
+
+.skill-container {
+    text-align: center;
+}
