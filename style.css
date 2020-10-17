@@ -112,7 +112,7 @@ body {
 
 .downBtn {
     font-size: 40px;
-    color: #FF6550;
+    color: white;
 }
 
 /* bounce animation https://codeburst.io/tutorial-make-a-bouncing-ball-entirely-with-css-1e7e3c853a50*/
@@ -125,16 +125,16 @@ body {
 
 @keyframes bounce {
     from { transform: translate3d(0, 0, 0);     }
-    to   { transform: translate3d(0, 30px, 0); }
+    to   { transform: translate3d(0, 20px, 0); }
   }
 
-  ball {
+  /* ball {
     -webkit-animation-name: bounce;
     -webkit-animation-duration: 0.5s;
     -webkit-animation-direction: alternate;
     -webkit-animation-timing-function: cubic-bezier(.5,0.05,1,.5);
     -webkit-animation-iteration-count: infinite;
-  }
+  } */
   
   @-webkit-keyframes bounce {
     from { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
@@ -143,9 +143,72 @@ body {
 
 
 .downBtn :hover {
-    color: #FF6550;
+    color:#FF6550;
 }
 
 .skill-container {
     text-align: center;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    font-size: 1.5em;
+    color: var(--dark-accent);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 3px solid #FF6550;
+}
+
+.separator::before {
+    margin-right: 0.25em;
+}
+
+.separator::after {
+    margin-left: 0.25em;
+}
+
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    justify-content: space-around;
+
+}
+
+.card {
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0px 0.8px 1.8px rgba(0, 0, 0, 0.13908558841119492), 0px 0px 2.9px rgba(0, 0, 0, 0.1176878055787034);
+    background-color: whitesmoke;
+    width: 300px;
+    border: 1px solid #aabed1;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-title {
+    color: #FF6550;
+}
+
+
+/* .card :hover {
+    border: 1px solid #FF6550;
+} */
+.card h5 :hover {
+    border: none;
 }
