@@ -203,3 +203,22 @@ function bParticles(optionsFile, container, callback){
   xmlhttp.open("GET", optionsFile, true); // `true`->async
   xmlhttp.send();
 }
+
+
+
+
+//scroll-back-to-top-btn 
+
+const showBackToTopBtn = document.querySelector("#back-to-top");
+
+window.addEventListener("scroll", showScrollFunction);
+console.log(showBackToTopBtn)
+
+function showScrollFunction () {
+    if (window.pageYOffset > 200) {
+      showBackToTopBtn.style.display = 'block'
+    }
+    else {
+      showBackToTopBtn.style.display = 'none'
+    }
+}

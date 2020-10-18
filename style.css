@@ -148,6 +148,9 @@ body {
 
 .skill-container {
     text-align: center;
+    margin-top: 60px;
+    min-height: 100vh;
+    max-height: 200vh;
 }
 
 .separator {
@@ -181,7 +184,7 @@ body {
     justify-content: center;
     flex-flow: wrap;
     justify-content: space-around;
-
+    margin-top: 90px;
 }
 
 .card {
@@ -211,4 +214,228 @@ body {
 } */
 .card h5 :hover {
     border: none;
+}
+
+.project-container {
+    text-align: center;
+    min-height: 100vh;
+    max-height: 300vh;
+    /* margin-bottom: 40px; */
+}
+
+
+.work-btn {
+    color: #FF6550;
+    border: 1px solid #FF6550;
+    border-radius: 10px;
+}
+
+.work-btn :hover {
+    background-color: #FF6550;
+    color: white;
+}
+
+
+
+.back-to-top {
+   display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: white;
+    color: #FF6550;
+    border: 1px solid #FF6550;
+    border-radius: 50%;
+}
+
+.back-to-top:hover {
+    background-color: #FF6550;
+    color: white;
+
+}
+
+
+
+.main__blockquote {
+    width: 60%;
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 10px auto 20px;
+    padding: 25px;
+    border: 1px solid #FF6550;
+    box-sizing: border-box;
+    border-left-width: 10px;
+}
+
+.main__blockquote::before {
+    content: '\201c';
+    font-size: 100px;
+    color: var(--accent-color);
+    margin: 0px 0px;
+    display: block;
+    margin-bottom: -80px;
+    margin-top: -40px;
+}
+
+#contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    border-radius: 10px;
+    height: 26em;
+}
+
+input[type='email'],
+input[type='name'],
+textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    resize: vertical;
+    outline: none;
+    border: 0px solid white;
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    height: 12em;
+}
+
+.submitbtn {
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.submitbtn:hover {
+    background-color: var(--dark-accent);
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 8px;
+    margin: 0px 0px 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(234, 240, 241, 0.1);
+}
+.contact-link:hover {
+    color: white;
+}
+
+.visit-link {
+    text-decoration: none;
+    padding: 3px 18px;
+    margin: 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+.visit-link:hover,
+.visit-link:focus,
+.visit-link:active {
+    color: white;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+footer h3 span {
+    color: var(--dark-accent);
+}
+
+@media screen and (max-width: 1200px) {
+    .main-content {
+          /* height: 32em; */
+          flex-direction: column-reverse;
+          justify-content: center;
+          text-align: center;
+          padding: 20px;
+    }
+    form {
+          width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social-links {
+          display: flex;
+          justify-content: center;
+    }
+
+    .fa {
+          margin: 3px;
+    }
+
+    .title-name {
+          font-size: 3em;
+    }
+
+    .image-container img {
+          height: 150px;
+          width: 150px;
+    }
+
+    .main__blockquote {
+          width: 90%;
+    }
+
+    .subtitle {
+          font-size: 1.2em;
+    }
+
+    .inverseCard {
+          display: flex;
+          flex-direction: column-reverse;
+    }
+
+    form {
+          width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title-name {
+          font-size: 2em;
+    }
+
+    .subtitle {
+          font-size: 0.9em;
+    }
+
+    .main-content #particles-js {
+          height: 110vh;
+    }
+
+    footer h3 {
+          font-size: 1em;
+    }
 }
