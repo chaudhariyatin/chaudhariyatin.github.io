@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script
-         src="https://kit.fontawesome.com/48069d8ab4.js"
-         crossorigin="anonymous"
-      ></script>
-      <link
-         href="https://fonts.googleapis.com/css2?family=Martel:wght@600&display=swap"
-         rel="stylesheet"
-      />
-      <link
-         rel="stylesheet"
-         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-         crossorigin="anonymous"
-      />
-      <link rel="stylesheet" href="style.css" />
-      <title>Yatin Chaudhari</title>
-   </head>
-   <body >
-      <div class="main-body-container">
-         <div id="particles"></div>
-         <div class="about-container">
-            <div class="hero-caption">
-               <h4 class="title-name text-sm font-weight-normal">Hi, I'm</h4>
-               <p>Yatin Chaudhari</p>
-               <h4>Web Developer & Tech Enthusiast..</h4>
-               <div>
-                  <button
-                     class="btn git-btn"
-                     onclick="window.open('https://github.com/chaudhariyatin')"
-                  >
-                     <i class="fab fa-github-square"></i>
-                  </button>
-                  <button class="btn linkedin-btn" onclick="window.open('')">
-                     <i class="fab fa-linkedin"></i>
-                  </button>
-               </div>
-               <!-- <button type="button" class="btn btn-default" onclick="window.open('#contact')">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <script src="https://kit.fontawesome.com/48069d8ab4.js" crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Martel:wght@600&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+   <link rel="stylesheet" href="style.css" />
+   <title>Yatin Chaudhari</title>
+</head>
+
+<body>
+   <div class="main-body-container">
+      <div id="particles"></div>
+      <div class="about-container">
+         <div class="hero-caption">
+            <h4 class="title-name text-sm font-weight-normal">Hi, I'm</h4>
+            <p>Yatin Chaudhari</p>
+            <h4>Web Developer & Tech Enthusiast..</h4>
+            <div>
+               <button class="btn git-btn" onclick="window.open('https://github.com/chaudhariyatin')">
+                  <i class="fab fa-github-square"></i>
+               </button>
+               <button class="btn linkedin-btn" onclick="window.open('')">
+                  <i class="fab fa-linkedin"></i>
+               </button>
+            </div>
+            <!-- <button type="button" class="btn btn-default" onclick="window.open('#contact')">
                   Get In Touch
                </button> -->
-               <a  href="#contact" class="btn btn-default" role="button">Get In Touch</a>
-            </div>
-            <div class="bounce">
-               <a href="#section2" class="downBtn">
-                  <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-               </a>
-            </div>
+            <a href="#contact" class="btn btn-default" role="button">Get In Touch</a>
+         </div>
+         <div class="bounce">
+            <a href="#section2" class="downBtn">
+               <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+            </a>
          </div>
       </div>
-      <!-- Skill section -->
-      <div class="skill-container">
-         <div class="separator" id="section2">My Expertise</div>
-        <div class="skill-icons">
+   </div>
+   <!-- Skill section -->
+   <div class="skill-container">
+      <div class="separator" id="section2">My Expertise</div>
+      <div class="skill-icons">
+         <div class="container align-container">
             <div class="card card-container text-center">
                <img
                   src="/assets/images/mobiledevelopment.png"
@@ -67,11 +57,8 @@
                </div>
             </div>
             <div class="card card-container text-center">
-               <img
-                  src="/assets/images/webdeveloper.png"
-                  alt="Full Stack Development"
-                  class="card-img-top mx-auto skill-image"
-               />
+               <img src="/assets/images/webdeveloper.png" alt="Full Stack Development"
+                  class="card-img-top mx-auto skill-image" />
                <div class="card-body">
                   <h5 class="card-title">Full Stack</h5>
                   <p class="card-text">
@@ -81,91 +68,134 @@
                </div>
             </div>
             <div class="card text-center">
-               <img
-                  src="/assets/images/digitalMarketing.png"
-                  alt="Digital Marketing"
-                  class="card-img-top mx-auto skill-image"
-               />
+               <img src="/assets/images/digitalMarketing.png" alt="Digital Marketing"
+                  class="card-img-top mx-auto skill-image" />
                <div class="card-body">
                   <h5 class="card-title">Digital Marketing</h5>
                   <p class="card-text">SEO, Facebook Ads, Web Analytics</p>
                </div>
             </div>
          </div>
-       </div>
-            <!-- Project section --> 
-            <div class="project-container">
-            <div class="separator">My Work</div>
-            <div class="skill-icons">
-                  <div class="card card-container text-center">
-                     <img
-                        src="/assets/images/mobiledevelopment.png"
-                        alt="Mobile App Development"
-                        class="card-img-top mx-auto skill-image"
-                     />
-                     <div class="card-body">
-                        <h5 class="card-title">Mobile Apps</h5>
-                        <p class="card-text">Cross-platform apps in React Native</p>
-                        <!-- <button class="work-btn btn btn-sm btn-outline-danger">View</button>
-                        <button class="work-btn btn btn-sm btn-outline-danger">Code</button> -->
-                        <a href="#" class="btn work-btn btn-sm btn-outline-danger btn-lg " role="button" aria-pressed="true">View</a>
-                        <a href="#" class="btn work-btn btn-sm btn-outline-danger btn-lg " role="button" aria-pressed="true">Code</a>
-                     </div>
-                  </div>
-                  <div class="card card-container text-center">
-                        <img
-                           src="/assets/images/mobiledevelopment.png"
-                           alt="Mobile App Development"
-                           class="card-img-top mx-auto skill-image"
-                        />
-                        <div class="card-body">
-                           <h5 class="card-title">Mobile Apps</h5>
-                           <p class="card-text">Cross-platform apps in React Native</p>
-                           <a href="#" class="btn work-btn btn-sm btn-outline-danger btn-lg " role="button" aria-pressed="true">View</a>
-                        <a href="#" class="btn work-btn btn-sm btn-outline-danger btn-lg " role="button" aria-pressed="true">Code</a>
-                        </div>
-                     </div>
-                     <div class="card card-container text-center">
-                        <img
-                           src="/assets/images/mobiledevelopment.png"
-                           alt="Mobile App Development"
-                           class="card-img-top mx-auto skill-image"
-                        />
-                        <div class="card-body">
-                           <h5 class="card-title">Mobile Apps</h5>
-                           <p class="card-text">Cross-platform apps in React Native</p>
-                           <a href="#" class="btn work-btn btn-sm btn-outline-danger btn-lg " role="button" aria-pressed="true">View</a>
-                        <a href="#" class="btn work-btn btn-sm btn-outline-danger btn-lg " role="button" aria-pressed="true">Code</a>
-                        </div>
-                     </div>
-            </div>
       </div>
+   </div>
+   <!-- Project section -->
+   <!-- <div class="project-container"> -->
+   <div class="separator">My Work</div>
+   <div class="container md-12">
+      <div class="project-card">
+         <div class="">
+            <img src="/assets/images/awesomestore.png" alt="awesome-store" class="card-img-top mx-auto skill-image" />
+         </div>
+         <div class=" card-body ">
+            <h3 class="card-title text-center">Awesome Store</h3>
+            <p class="card-text">
+               Awesome store is E-commerce store built with React js, Redux, React-bootstrap and Firebase.
+            </p>
+            <div class="buttons">
+               <a href="https://github.com/chaudhariyatin/awesomestore.git" target="_blank"
+                  class="btn work-btn btn-sm btn-outline-danger btn-lg align-item-center" role="button"
+                  aria-pressed="true">Code</a>
+            </div>
+         </div>
+      </div>
+
+      <!--Project card - 2  -->
+
+      <div class="project-card">
+         <div class="col">
+            <img src="/assets/images/newsapp.png" alt="news-app" class="card-img-top mx-auto skill-image" />
+         </div>
+         <div class="col card-body ">
+            <h3 class="card-title text-center">The News APP</h3>
+            <p class="card-text">
+               News app is built with React js, Material ui and News API.
+            </p>
+            <div class="buttons">
+               <a href="https://github.com/chaudhariyatin/newsapp.git" target="_blank"
+                  class="btn work-btn btn-sm btn-outline-danger btn-lg align-item-center" role="button"
+                  aria-pressed="true">Code</a>
+            </div>
+         </div>
+      </div>
+
+      <!-- project card - 3 -->
+
+      <div class="project-card">
+         <div class="col">
+            <img src="/assets/images/passwordGen.png" alt="passwordGen" class="card-img-top mx-auto skill-image" />
+         </div>
+         <div class="col card-body ">
+            <h3 class="card-title text-center">Password Generator</h3>
+            <p class="card-text">
+               Password generator app is built with Javascript, HTML and CSS.
+            </p>
+            <div class="buttons">
+               <a href="https://github.com/chaudhariyatin/Password-Generator.git" target="_blank"
+                  class="btn work-btn btn-sm btn-outline-danger btn-lg align-item-center" role="button"
+                  aria-pressed="true">Code</a>
+               <a href="https://vibrant-kowalevski-53bbc3.netlify.app/" target="_blank"
+                  class="btn work-btn btn-sm btn-outline-danger btn-lg " role="button" aria-pressed="true">View</a>
+            </div>
+         </div>
+      </div>
+
+      <!-- project card - 4 -->
+
+      <div class="project-card">
+         <div class="col">
+            <img src="/assets/images/movieapp.png" alt="movie-app" class="card-img-top mx-auto skill-image" />
+         </div>
+         <div class="col card-body ">
+            <h3 class="card-title text-center">Movieverse</h3>
+            <p class="card-text">
+               Movieverse is movie info app built with React js.
+            </p>
+            <div class="buttons">
+               <a href="https://github.com/chaudhariyatin/Movieverse.git" target="_blank"
+               class="btn work-btn btn-sm btn-outline-danger btn-lg align-item-center" role="button"
+               aria-pressed="true">Code</a>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   
+
+   <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i
+         class="fas fa-chevron-up"></i></a>
+   <div class="separator">About Me</div>
+   <blockquote class="main__blockquote">
+      <p>
+         I am a software developer from Mumbai, India. I enjoy building everything from mobile apps to rich interactive
+         websites to Node.js apps. If you are a business seeking online presence or an employer looking to hire, I shall
+         be happy to
+         join you.
+      </p>
+   </blockquote>
+   <div class="separator">Contact</div>
+   <section id="contact">
       
-      <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
-      <div class="separator">About Me</div>
-                  <blockquote class="main__blockquote">
-                        <p>
-                              I am a software developer from Mumbai, India. I enjoy building everything from mobile apps to rich interactive
-                              websites to Node.js apps. If you are a business seeking online presence or an employer looking to hire, I shall be happy to
-                              join you.
-                        </p>
-                  </blockquote>
-                  <div class="separator">Contact</div>
-                  <section id="contact">
-                        <form action="/" method="POST">
-                           <input required type="name" name="_replyto" id="name" placeholder="Your Name" />
-                              <input required type="email" name="_replyto" id="email" placeholder="Your email" />
-                              <textarea required name="message" placeholder="Leave a message..."></textarea>
-                              <!-- <button type="submit" class="btn visit-link">Submit</button> -->
-                              <button type="submit" class="work-btn btn btn-sm btn-outline-danger">Submit</button>
-                           </form>
-                  </section>
-    </div>
-      <script src="bParticles.js"></script>
-      <script>
-         bParticles("bParticles.json", "particles", function (particlesID) {
-            console.log("bParticles initiliazed with ID #" + particlesID);
-         });
-      </script>
-   </body>
+<form action="https://formcarry.com/s/J0XpotXjYk" method="POST" accept-charset="UTF-8" >
+         <input required type="name" name="name" id="name" placeholder="Your Name" />
+         <input required type="email" name="email" id="email" placeholder="Your email" />
+         <textarea required type="text" name="message" placeholder="Leave a message..."></textarea>
+         <input type="hidden" name="_gotcha">
+         <button type="submit" class="work-btn btn btn-sm btn-outline-danger">Submit</button>
+      </form>
+   </section>
+   <footer class="footer">
+      <p class="font-weight-normal">Yatin Chaudhari <span>&copy;2020</span></p>
+</footer>
+   </div>
+   <script src="bParticles.js"></script>
+   <script>
+      bParticles("bParticles.json", "particles", function (particlesID) {
+         console.log("bParticles initiliazed with ID #" + particlesID);
+      });
+   </script>
+</body>
+
 </html>
+
+
